@@ -1,0 +1,50 @@
+body{
+background-color: rgb(10, 19, 72);
+scroll-behavior: smooth;
+}
+header{
+  position: relative;
+  z-index: 3;
+}
+header ul li:hover a{
+  color: yellow;
+  text-shadow: 0px 0px 4px rgba(255, 255, 255, 0.695);
+}
+header ul li{
+  position: relative;
+}
+header ul li>.sub{
+  position: absolute;
+  top: 150%;
+  left: -150%;
+  border-radius: 10px;
+  opacity: 0;visibility: hidden;
+  transition: .4s;
+}
+header ul li:hover>.sub{
+  opacity: 1;
+  visibility: visible;
+}
+
+#articlesection{
+  position: relative;
+  z-index: 1;
+}
+
+#articlesection article{
+  background-color: rgb(235, 235, 235);
+  padding: 10px;
+  border-radius: 16px;
+  box-shadow: 1px 1px 10px rgba(107, 107, 107, 0.659);
+  transition: .4s;
+}
+#articlesection article:hover{
+  scale: 1.2;
+  transform: rotateZ(-5deg);
+  box-shadow: 1px 1px 10px rgba(255, 255, 255, 0.951);
+
+}
+article img{
+  border: 6px solid rgb(27, 27, 27);
+  border-radius: 10px;
+}
